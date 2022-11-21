@@ -151,7 +151,7 @@ Project Link: [https://github.com/cgrpa/RPAChallenge---CSharp](https://github.co
 [issues-shield]: https://img.shields.io/github/issues/cgrpa/RPAChallenge---CSharp.svg?style=for-the-badge
 [issues-url]: https://github.com/cgrpa/RPAChallenge---CSharp/issues
 [license-shield]: https://img.shields.io/github/license/cgrpa/RPAChallenge---CSharp.svg?style=for-the-badge
-[license-url]: https://github.com/cgrpa/RPAChallenge---CSharp/blob/master/LICENSE.txt
+[license-url]: https://github.com/cgrpa/RPAChallenge---CSharp/blob/master/license.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/chegamble
 [product-screenshot]: images/screenshot.png
