@@ -31,7 +31,7 @@
     The fields will change position on the screen after every submission throughout 10 rounds thus the workflow must correctly identify where each spreadsheet record must be typed every time.
     <br />
     <br />
-    The fastest speed I achived was 2043ms.
+    The fastest speed I achieved was 2043ms.
     <br />
     <br>
     <a href="https://rpachallenge.com">RPAChallenge</a>
