@@ -58,12 +58,7 @@
 
 Clone the repository to a directory of your choice, build and run the solution.
 
-### Dependencies
 
-I recommend installing all dependencies through NuGet package manager.
-* [FlaUI](https://github.com/FlaUI/FlaUI)
-* [Microsoft Oledb](System.Data.OleDb)
-* [NUnit](https://nunit.org/)
 
 ### Installation
 Using git in VS:
@@ -79,8 +74,14 @@ Using git in VS:
 
 Otherwise:
 1. Copy the code from Program.cs
-2. Install required dependencies (see above)
+2. Install required dependencies (see below)
 
+### Dependencies
+
+I recommend installing all dependencies through NuGet package manager.
+* [FlaUI](https://github.com/FlaUI/FlaUI)
+* [Microsoft Oledb](System.Data.OleDb)
+* [NUnit](https://nunit.org/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
