@@ -29,8 +29,6 @@ namespace RPAChallenge___CSharp
         static void Main(string[] args)
         {
 
-            // "C:\Users\chele\OneDrive\Documents\Projects\RPAChallenge\CSharp - FlaUI\challenge.xlsx"
-            // C:\Users\chele\OneDrive\Documents\Projects\RPAChallenge\CSharp - FlaUI\challenge.xlsx
             KillProcesses("msedge");
             string rpaChallengePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, "challenge.xlsx");
             // Read DataTable
