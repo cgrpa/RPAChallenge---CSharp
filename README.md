@@ -71,6 +71,7 @@ Using git in VS:
    Default is C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
    ```
 3. Run the project
+4. Bob's your uncle, fanny's your aunt
 
 Otherwise:
 1. Copy the code from Program.cs
