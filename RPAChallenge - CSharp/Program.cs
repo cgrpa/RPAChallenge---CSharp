@@ -13,6 +13,7 @@ using FlaUI.UIA3;
 using NUnit.Framework;
 using System.Data;
 using System.Data.OleDb;
+using System.Data.Common;
 using System.IO;
 using System.Threading.Tasks;
 using System.Linq;
@@ -28,6 +29,9 @@ namespace RPAChallenge___CSharp
         public const int SmallWaitTimeout = 1000;
         static void Main(string[] args)
         {
+            ParallelOptions parallelOptions = new ParallelOptions();
+            parallelOptions.MaxDegreeOfParallelism = Environment.ProcessorCount;
+            // use max degree of parallelism.
 
             KillProcesses("msedge");
             string rpaChallengePath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, "challenge.xlsx");
@@ -71,7 +75,7 @@ namespace RPAChallenge___CSharp
                     AutomationElement[] inputGroupChildren = inputGroup.FindAllChildren(); //create Array of inputGroup Child elements
 
                     //Find and enter input data in parallel
-                    Parallel.ForEach(data.Columns.Cast<DataColumn>().AsQueryable(), (column, state, index) =>
+                    Parallel.ForEach(data.Columns.Cast<DataColumn>().AsQueryable(), parallelOptions, (column, state, index) =>
                     {
                         int childIndex = -1;
                         string lblName = column.ColumnName.Trim();
@@ -82,7 +86,7 @@ namespace RPAChallenge___CSharp
 
                         var inputElement = inputGroupChildren[childIndex + 1].AsTextBox(); // the Input element always comes after the label.
 
-                        if (row[column.ColumnName].ToString() == string.Empty) throw new SystemException("empty"); // Just incase you have empty columns in your data.
+                        if (row[column.ColumnName].ToString() == string.Empty) throw new SystemException("Empty row in data"); // Just incase you have empty columns in your data.
 
                         inputElement.Text = inputText; // Set Text.
                     }
