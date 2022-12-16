@@ -21,7 +21,7 @@
 
 
 <br />
-<h3 align="center">RPAChallenge in C# utilizing FlaUI</h3>
+<h3 align="center">RPAChallenge in C# utilizing FlaUI for UIA3</h3>
 
   <p align="center">
     Created as part of my RPA Speed Observation project.
